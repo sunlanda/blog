@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "sunlanda blog"
   text: "一个前端小书站点"
-  tagline: '帮助到1000位前端开发者'
+  tagline: '帮助到XXXX位前端开发者'
   actions:
     - theme: brand
       text: 开始学习
