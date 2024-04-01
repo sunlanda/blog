@@ -25,7 +25,14 @@ export default defineConfig({
         collapsed:false,
         items: [
           { text: 'css', link: '/css/flex' },
-          { text: 'flex', link: '/css/flex' }
+          { text: 'flex', link: '/css/flex' },
+        ]
+      },
+      {
+        text: '页面性能指标',
+        collapsed:false,
+        items: [
+          { text: '页面性能时间', link: '/performance/how-to-get-performance-target' },
         ]
       },
       // {
