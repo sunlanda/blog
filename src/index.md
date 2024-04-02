@@ -9,10 +9,12 @@ hero:
   actions:
     - theme: brand
       text: 开始学习
-      link: /markdown-examples
+      link: /js/chapter1
     - theme: alt
-      text: 面经
-      link: /api-examples
+      text: 荐书
+      link: /js/chapter1
+      # text: 面经
+      # link: /api-examples
 
 features:
   - title: 沉淀思想
