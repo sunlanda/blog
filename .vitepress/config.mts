@@ -5,7 +5,8 @@ export default defineConfig({
   title: "前端知识体系",
   srcDir: './src',
   outDir: './docs',
-  base: '/', //  '/blog/'
+  // base: '/',
+  base: '/blog/',
   description: "一个前端基础知识补充",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
