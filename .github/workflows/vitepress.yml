@@ -41,10 +41,10 @@ jobs:
           node-version: '18'
       # 4. 安装nodejs依赖
       - name: install dependencies
-      - run: npm install
+        run: npm install
       # 5. build打包
       - name: build vitepress to dist
-      - run: npm run build
+        run: npm run build
       # 6. 上传构建内容
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -52,7 +52,7 @@ jobs:
           # Upload entire repository
           path: './docs'
       # 7. 部署pages
-      - name: Deploy to GitHub Pages - 部署
+      - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
         with:
