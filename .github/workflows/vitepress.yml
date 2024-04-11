@@ -45,6 +45,9 @@ jobs:
       # 5. build打包
       - name: build vitepress to dist
         run: npm run build
+      # 5.1 禁止jekyll
+      - name: Disable Jekyll
+        run: touch docs/.nojekyll
       # 6. 上传构建内容
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
