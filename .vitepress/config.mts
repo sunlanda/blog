@@ -27,6 +27,7 @@ export default defineConfig({
         text: 'JS基础',
         collapsed:false,
         items: [
+          { text: '如何通过github actions部署vitepress 静态网站？', link: '/project/how-to-deploy-static-page-for-github-action' },
           { text: '序言', link: '/js/chapter1' },
           { text: '数据类型', link: '/js/string-array-object' },
           { text: '作用域', link: '/js/effect-region' },
