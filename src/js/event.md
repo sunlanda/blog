@@ -1,4 +1,3 @@
-event.md
 
 # 事件监听 addEventListener
 element.addEventListener(event, function, useCapture);　
@@ -6,6 +5,8 @@ element 是要绑定事件监听器的 DOM 元素。
 event 是要监听的事件类型的字符串（不带 "on"），比如 "click"、"mouseover" 等。
 function 是事件触发时要调用的函数。
 useCapture 是一个布尔值，可选参数，默认为 false（冒泡）。当值为 true 时，表示在捕获阶段触发事件处理函数。
+
+**demo.html**
 
 ```html
 <!DOCTYPE html>
@@ -33,7 +34,7 @@ useCapture 是一个布尔值，可选参数，默认为 false（冒泡）。当
 
 ```
 
-
+**event.js**
 
 ```js
 
@@ -113,4 +114,11 @@ useCapture 是一个布尔值，可选参数，默认为 false（冒泡）。当
       // eventBind(btn, "click", function () { classConsole.log('class 构造函数被点击') })
       eventBind(btn, "click", classConsole.log('我在被点击时执行'))
 
-···
+```
+
+## 总结
+
+这段代码用到了闭包，构造函数，兼容IE的事件绑定方法，应该能帮助你比较清晰的了解如何简单封装一个事件绑定函数。
+
+## 参考
+[绑定事件类型 click message](https://developer.mozilla.org/zh-CN/docs/Web/Events)
