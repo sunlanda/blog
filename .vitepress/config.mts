@@ -27,13 +27,14 @@ export default defineConfig({
         text: 'JS基础',
         collapsed:false,
         items: [
-          { text: '如何通过github actions部署vitepress 静态网站？', link: '/project/how-to-deploy-static-page-for-github-action' },
           { text: '序言', link: '/js/chapter1' },
-          { text: '数据类型', link: '/js/string-array-object' },
-          { text: '作用域', link: '/js/effect-region' },
+          // { text: '数据类型', link: '/js/string-array-object' },
+          // { text: '作用域', link: '/js/effect-region' },
           { text: 'this指向', link: '/js/this' },
-          { text: '函数', link: '/js/function' },
-          { text: 'ECMA规范&lt;es6-es2024&gt;', link: '/js/ecma' },
+          { text: 'event事件代理', link: '/js/event' },
+          { text: '如何通过github actions部署vitepress 静态网站？', link: '/project/how-to-deploy-static-page-for-github-action' },
+          // { text: '函数', link: '/js/function' },
+          // { text: 'ECMA规范&lt;es6-es2024&gt;', link: '/js/ecma' },
         ]
       },
       // {
@@ -56,11 +57,22 @@ export default defineConfig({
       //   ]
       // },
       {
+        text: '最佳实践',
+        collapsed:false,
+        items: [
+          // { text: '网站群公共头注入实践', link: '/performance/portal-bar' },
+          { text: 'iothub物模型管理OSS实践', link: '/project/nodejs-s3-oss' },
+          // { text: 'Vue & Nuxt.js对京东云官网的SSR实践', link: '/performance/nuxt-ssr' },
+          // { text: '如何排查线上问题', link: '/performance/how-can-i-fix-the-bug' },
+          // { text: '如何写故障报告', link: '/performance/write-bug-report' },
+        ]
+      },
+      {
         text: '页面性能指标',
         collapsed:false,
         items: [
           { text: '页面性能时间', link: '/performance/how-to-get-performance-target' },
-          { text: '如何进行性能优化', link: '/performance/optimization' },
+          // { text: '如何进行性能优化', link: '/performance/optimization' },
         ]
       },
       // {
