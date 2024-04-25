@@ -121,4 +121,4 @@ useCapture 是一个布尔值，可选参数，默认为 false（冒泡）。当
 这段代码用到了闭包，构造函数，兼容IE的事件绑定方法，应该能帮助你比较清晰的了解如何简单封装一个事件绑定函数。
 
 ## 参考
-[绑定事件类型 click message](https://developer.mozilla.org/zh-CN/docs/Web/Events)
+- [绑定事件类型 click message](https://developer.mozilla.org/zh-CN/docs/Web/Events)

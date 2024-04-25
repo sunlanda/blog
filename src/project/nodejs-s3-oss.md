@@ -175,8 +175,8 @@ class deviceListController extends Controller {
 至此,一个简单的Node.js服务调用S3来管理云存储的项目就搞完了,希望对你有帮助.
 
 ## 参考
-[aws-nodejs版本SDK](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/s3-example-creating-buckets.html)
-[jdcloud oss 兼容S3](https://docs.jdcloud.com/cn/object-storage-service/api/introduction-2)
-[jdcloud sdk 云资源](https://github.com/jdcloud-api/jdcloud-sdk-nodejs)
-[京东云AKSK控制台](https://uc.jdcloud.com/account/accesskey)
-[egg.js官方文档](https://www.eggjs.org/zh-CN/intro/quickstart)
+- [aws-nodejs版本SDK](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/s3-example-creating-buckets.html)
+- [jdcloud oss 兼容S3](https://docs.jdcloud.com/cn/object-storage-service/api/introduction-2)
+- [jdcloud sdk 云资源](https://github.com/jdcloud-api/jdcloud-sdk-nodejs)
+- [京东云AKSK控制台](https://uc.jdcloud.com/account/accesskey)
+- [egg.js官方文档](https://www.eggjs.org/zh-CN/intro/quickstart)
