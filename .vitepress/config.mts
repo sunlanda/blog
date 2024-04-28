@@ -32,7 +32,6 @@ export default defineConfig({
           // { text: '作用域', link: '/js/effect-region' },
           { text: 'this指向', link: '/js/this' },
           { text: 'event事件代理', link: '/js/event' },
-          { text: '如何通过github actions部署vitepress 静态网站？', link: '/project/how-to-deploy-static-page-for-github-action' },
           // { text: '函数', link: '/js/function' },
           // { text: 'ECMA规范&lt;es6-es2024&gt;', link: '/js/ecma' },
         ]
@@ -61,10 +60,19 @@ export default defineConfig({
         collapsed:false,
         items: [
           // { text: '网站群公共头注入实践', link: '/performance/portal-bar' },
+          { text: '如何通过github actions部署vitepress 静态网站？', link: '/project/how-to-deploy-static-page-for-github-action' },
           { text: 'iothub物模型管理OSS实践', link: '/project/nodejs-s3-oss' },
+          { text: '服务器运维工具ansible的部署实践', link: '/project/rhel-ansible' },
           // { text: 'Vue & Nuxt.js对京东云官网的SSR实践', link: '/performance/nuxt-ssr' },
           // { text: '如何排查线上问题', link: '/performance/how-can-i-fix-the-bug' },
           // { text: '如何写故障报告', link: '/performance/write-bug-report' },
+        ]
+      },
+      {
+        text: '算法',
+        collapsed:false,
+        items: [
+          { text: '如何实现一个累加函数? add(1)(2) = 3', link: '/algorithm/add-plus-add' },
         ]
       },
       {
