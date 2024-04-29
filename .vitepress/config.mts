@@ -28,9 +28,9 @@ export default defineConfig({
         collapsed:false,
         items: [
           { text: '序言', link: '/js/chapter1' },
-          // { text: '数据类型', link: '/js/string-array-object' },
-          // { text: '作用域', link: '/js/effect-region' },
-          { text: 'this指向', link: '/js/this' },
+          { text: '数据类型', link: '/js/javascript-type' },
+          { text: '作用域', link: '/js/let-const' },
+          { text: 'this,call apply bind 区别', link: '/js/this' },
           { text: 'event事件代理', link: '/js/event' },
           // { text: '函数', link: '/js/function' },
           // { text: 'ECMA规范&lt;es6-es2024&gt;', link: '/js/ecma' },
