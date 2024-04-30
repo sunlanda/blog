@@ -47,15 +47,15 @@ export default defineConfig({
       //     { text: 'flex流行布局', link: '/css/flex' },
       //   ]
       // },
-      // {
-      //   text: '工程化',
-      //   collapsed:false,
-      //   items: [
-      //     { text: '序言', link: '/engineering/flex' },
-      //     { text: '预处理sass/less', link: '/engineering/flex' },
-      //     { text: 'flex流行布局', link: '/engineering/flex' },
-      //   ]
-      // },
+      {
+        text: '工程化与团队',
+        collapsed:false,
+        items: [
+          { text: '如何进行多git源ssh配置', link: '/project/git-gitlab-github-sshkey' },
+          // { text: '预处理sass/less', link: '/engineering/flex' },
+          // { text: 'flex流行布局', link: '/engineering/flex' },
+        ]
+      },
       {
         text: '最佳实践',
         collapsed:false,
