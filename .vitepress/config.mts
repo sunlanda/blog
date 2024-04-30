@@ -29,7 +29,7 @@ export default defineConfig({
         items: [
           { text: '序言', link: '/js/chapter1' },
           { text: '数据类型', link: '/js/javascript-type' },
-          { text: '作用域', link: '/js/let-const' },
+          // { text: '作用域', link: '/js/let-const' },
           { text: 'this,call apply bind 区别', link: '/js/this' },
           { text: 'event事件代理', link: '/js/event' },
           // { text: '函数', link: '/js/function' },
