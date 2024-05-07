@@ -32,6 +32,7 @@ export default defineConfig({
           // { text: '作用域', link: '/js/let-const' },
           { text: 'this,call apply bind 区别', link: '/js/this' },
           { text: 'event事件代理', link: '/js/event' },
+          { text: 'typescript快速入门', link: '/js/ts-first' },
           // { text: '函数', link: '/js/function' },
           // { text: 'ECMA规范&lt;es6-es2024&gt;', link: '/js/ecma' },
         ]
