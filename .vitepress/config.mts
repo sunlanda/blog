@@ -8,6 +8,7 @@ export default defineConfig({
   // base: '/',
   base: '/blog/',
   description: "一个前端基础知识补充",
+  // lastUpdated:true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     logo:"/logo.svg",
