@@ -20,7 +20,7 @@ cd ~/.ssh
 ssh-keygen  -t rsa  -C "your@email.com"
 ```
 ### 用config配置不同git平台的密钥
-![](media/15856476382620/16387721363480.jpg)
+![](/github-ssh-key.jpg)
 核心是.ssh中写入config (没有config 可以 使用命令行 touch config 或者  vi config创建) 内容存储如下:
 ``` sh
 # gitee
@@ -52,7 +52,7 @@ pbcopy  < ./id_rsa.pub
 
 ## 二.git仓库设置中添加公钥
 这一步是为了在对pull/push代码到git平台时区分你是谁
-![](media/15856476382620/16387732397540.jpg)
+![](/ssh-ls.jpg)
 
 * 进入git平台的设置页面: [https://github.com/settings/keys](https://github.com/settings/keys)
 * New SSH Key 点击添加然后步骤一中copy的rsa.pub文件粘贴进去
@@ -66,6 +66,6 @@ ssh  -T git@github.com
 ssh  -T git@gitee.com
 ```
 进行测试, 得到:
-![](media/15856476382620/16387606550654.jpg)
+![](/ssh-t.jpg)
 
 即代表测试某个git平台成功连接,后面clone 或者pull/push 就不需要输入账号密码了,开启你的欢乐提代码之路吧~
