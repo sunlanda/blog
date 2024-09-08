@@ -57,6 +57,13 @@ export default defineConfig({
         ]
       },
       {
+        text: '安全',
+        collapsed:false,
+        items: [
+          { text: '让你的网站支持HTTPS', link: '/project/https-letusencrypt' },
+        ]
+      },
+      {
         text: '最佳实践',
         collapsed:false,
         items: [
