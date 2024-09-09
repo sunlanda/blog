@@ -69,6 +69,7 @@ export default defineConfig({
         collapsed:false,
         items: [
           // { text: '网站群公共头注入实践', link: '/performance/portal-bar' },
+          { text: '使用sentry私有化异常监控sentry部署', link: '/project/sentry-for-error-report' },
           { text: '如何通过github actions部署vitepress 静态网站？', link: '/project/how-to-deploy-static-page-for-github-action' },
           { text: 'iothub物模型管理OSS实践', link: '/project/nodejs-s3-oss' },
           { text: '服务器运维工具ansible的部署实践', link: '/project/rhel-ansible' },
