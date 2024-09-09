@@ -71,7 +71,7 @@ export default defineConfig({
           // { text: '网站群公共头注入实践', link: '/performance/portal-bar' },
           { text: '使用sentry私有化异常监控sentry部署', link: '/project/sentry-for-error-report' },
           { text: '如何通过github actions部署vitepress 静态网站？', link: '/project/how-to-deploy-static-page-for-github-action' },
-          { text: 'iothub物模型管理OSS实践', link: '/project/nodejs-s3-oss' },
+          { text: 'node.js操作京东云云存储的文件上传下载实践', link: '/project/nodejs-s3-oss' },
           { text: '服务器运维工具ansible的部署实践', link: '/project/rhel-ansible' },
           // { text: 'Vue & Nuxt.js对京东云官网的SSR实践', link: '/performance/nuxt-ssr' },
           // { text: '如何排查线上问题', link: '/performance/how-can-i-fix-the-bug' },
