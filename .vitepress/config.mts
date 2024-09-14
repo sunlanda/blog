@@ -30,7 +30,7 @@ export default defineConfig({
         items: [
           { text: '序言', link: '/js/chapter1' },
           { text: '数据类型', link: '/js/javascript-type' },
-          // { text: '作用域', link: '/js/let-const' },
+          { text: '作用域', link: '/js/let-const' },
           { text: 'this,call apply bind 区别', link: '/js/this' },
           { text: 'event事件代理', link: '/js/event' },
           { text: 'typescript快速入门', link: '/js/ts-first' },
@@ -44,7 +44,7 @@ export default defineConfig({
       //   items: [
       //     { text: '序言', link: '/css/chapter1' },
       //     { text: 'css常见问题', link: '/css/flex' },
-      //     { text: '预处理sass/less', link: '/css/flex' },
+      //     { text: '预处理器postcss自定义样式函数', link: '/css/flex' },
       //     { text: 'flex流行布局', link: '/css/flex' },
       //   ]
       // },
@@ -53,8 +53,8 @@ export default defineConfig({
         collapsed:false,
         items: [
           { text: '如何进行多git源ssh配置', link: '/project/git-gitlab-github-sshkey' },
-          // { text: '预处理sass/less', link: '/engineering/flex' },
-          // { text: 'flex流行布局', link: '/engineering/flex' },
+          // { text: 'webpack自定义plugin', link: '/project/webpack-plugin' },
+          // { text: 'rollup快速打包组件', link: '/project/rollup-tutotal' },
         ]
       },
       {
@@ -74,15 +74,25 @@ export default defineConfig({
           { text: 'node.js操作京东云云存储的文件上传下载实践', link: '/project/nodejs-s3-oss' },
           { text: '服务器运维工具ansible的部署实践', link: '/project/rhel-ansible' },
           // { text: 'Vue & Nuxt.js对京东云官网的SSR实践', link: '/performance/nuxt-ssr' },
+          // { text: 'chrome插件编写', link: '/project/chrome-extension' },
+          // { text: 'vscode插件编写', link: '/project/vscode-extension' },
+          // { text: 'Three.js入门', link: '/project/threejs-tutoial' },
           // { text: '如何排查线上问题', link: '/performance/how-can-i-fix-the-bug' },
           // { text: '如何写故障报告', link: '/performance/write-bug-report' },
         ]
       },
       {
-        text: '算法',
+        text: '算法 & 面试题',
         collapsed:false,
         items: [
-          { text: '如何实现一个累加函数? add(1)(2) = 3', link: '/algorithm/add-plus-add' },
+          { text: '累加函数 add(1)(2)=3', link: '/algorithm/add-plus-add' },
+          // { text: '浏览器执行顺序', link: '/algorithm/execute-sequence' },
+          // { text: '微任务宏任务判断执行结果', link: '/algorithm/js-promise' },
+          // { text: '算法入门指引', link: '/algorithm/index' },
+          { text: '数组排序', link: '/algorithm/sort' },
+          // { text: '树结构', link: '/algorithm/sort' },
+          // { text: '图', link: '/algorithm/sort' },
+          // { text: '链表', link: '/algorithm/sort' },
         ]
       },
       {
