@@ -6,7 +6,7 @@ export default defineConfig({
   srcDir: './src',
   outDir: './docs',
   // base: '/',
-  base: '/blog/',
+  base: '/',
   description: "一个前端基础知识补充",
   // lastUpdated:true,
   themeConfig: {
@@ -34,6 +34,7 @@ export default defineConfig({
           { text: 'this,call apply bind 区别', link: '/js/this' },
           { text: 'event事件代理', link: '/js/event' },
           { text: 'typescript快速入门', link: '/js/ts-first' },
+          { text: 'ES Module模块化', link: '/js/modules' },
           // { text: '函数', link: '/js/function' },
           // { text: 'ECMA规范&lt;es6-es2024&gt;', link: '/js/ecma' },
         ]
