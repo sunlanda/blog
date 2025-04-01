@@ -3,7 +3,7 @@
 `window.performance.timing` 是一个浏览器BOM对象中的一个性能相关的API
 
 
-![获取资源截图1](/public/performance-1.png)
+![获取资源截图1](/performance-1.png)
 
 ```js
 // 在页面console中执行,

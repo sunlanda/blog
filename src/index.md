@@ -11,17 +11,17 @@ hero:
       text: 开始学习
       link: /js/chapter1
     - theme: alt
-      text: 荐书
-      link: /js/chapter1
+      text: 关于
+      link: /about/resume
       # text: 面经
       # link: /api-examples
 
 features:
   - title: 沉淀思想
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: Precipitate thoughts
   - title: 助人助己
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: Helping others is also helping oneself
   - title: 教学相长
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: Teaching and learning promote each other
 ---
 
