@@ -37,6 +37,11 @@ export default defineConfig({
           { text: 'ES Module模块化', link: '/js/modules' },
           // { text: '函数', link: '/js/function' },
           // { text: 'ECMA规范&lt;es6-es2024&gt;', link: '/js/ecma' },
+
+          // { text: 'vue生命周期', link: '/markdown-examples' },
+          // { text: 'vue3新特性', link: '/api-examples' }
+          // { text: 'react.js从基础到熟练', link: '/api-examples' }
+          // { text: 'ECMA规范&lt;es6-es2024&gt;', link: '/js/ecma' },
         ]
       },
       // {
@@ -54,9 +59,13 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: '如何进行多git源ssh配置', link: '/project/git-gitlab-github-sshkey' },
+          { text: '如何写一个函数库并发布npm', link: '/project/npmpublish' },
+          // { text: '开发第一款自己的脚手架cli', link: '/project/first-cli' },
           // { text: 'webpack自定义plugin', link: '/project/webpack-plugin' },
           // { text: 'rollup快速打包组件', link: '/project/rollup-tutotal' },
-          // { text: '开发第一款自己的脚手架cli', link: '/project/first-cli' },
+          // { text: 'cjs和esmodule有什么区别', link: '/project/cjs' },
+          // { text: '预处理sass/less', link: '/engineering/flex' },
+          // { text: 'flex流行布局', link: '/engineering/flex' },
         ]
       },
       {
@@ -113,14 +122,6 @@ export default defineConfig({
       //     { text: '犀牛书V7', link: '/books/01' },
       //   ]
       // },
-      // {
-      //   text: 'Vue.js',
-      //   collapsed:true,
-      //   items: [
-      //     { text: 'vue生命周期', link: '/markdown-examples' },
-      //     { text: 'vue3新特性', link: '/api-examples' }
-      //   ]
-      // }
     ],
     socialLinks: [
       // { icon: 'github', link: 'https://github.com/sunlanda/blog' }
