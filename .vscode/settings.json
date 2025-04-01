@@ -1,10 +1,9 @@
 {
   "fileheader.customMade": {
     "Author": "sunlanda relaxto@qq.com", // 同时获取用户名与邮箱
-    "Date": "Do not edit", 
-    "LastEditors": "sunlanda relaxto@qq.com",     
+    "Date": "Do not edit",
+    "LastEditors": "sunlanda relaxto@qq.com",
     "LastEditTime": "Do not edit",
-    "FilePath": "Do not edit",
-    // "Description": "",
-},
+    "FilePath": "Do not edit"
+  }
 }

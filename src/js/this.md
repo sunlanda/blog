@@ -37,10 +37,40 @@ var tiger = {
     return fn()
   }
 }
-// console.log(money.sayHello());
-// console.log(elephant.sayHello());
+console.log(money.sayHello());
+console.log(elephant.sayHello());
 console.log(tiger.sayHello());
 
+```
+
+
+> 箭头函数与普通函数的this指向问题
+> 
+```js
+ /**
+  * 两个setTimeout中打印的this是不一样的
+  * 可以得出结论 : function 普通函数打印this就是当前function
+  * ()=>{} 箭头函数中this 指向的是该剪头函数外层的this
+  */
+ var cat = {
+  name:'name喵喵',
+  sayName(){
+    console.log("miaomiao ")
+    console.log(this)
+  },
+  sayName: function(){
+    console.log("func miaomiao ")
+    console.log(this)
+    setTimeout(function(){
+      console.log(this)
+    },200)
+    setTimeout(()=>{
+      console.log(this)
+    },200)
+  },
+}
+cat.sayName()
+ 
 ```
 
 

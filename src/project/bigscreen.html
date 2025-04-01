@@ -1,0 +1,168 @@
+<!--
+ * @Date: 2025-02-11 10:37:28
+ * @LastEditTime: 2025-03-20 17:02:56
+ * @FilePath: /blog/src/project/bigscreen.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bigscreen</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #screen-container {
+            position: relative;
+            width: 1920px;
+            height: 1080px;
+            /* 初始缩放比例为 1 */
+            transform: scale(1);
+            transform-origin: center center;
+        }
+
+        #screen-content {
+            min-width: 1200px;
+            width: 100%;
+            height: 100%;
+            /* background-color: #f0f0f0; */
+            display: flex;
+            flex-direction:row;
+
+            justify-content: center;
+            align-items: center;
+        }
+        .area-row{
+            height: auto;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid red;
+        }
+        .left-area{
+            width: 25%;
+        }
+        .center-area{
+            width: 50%;
+        }
+        .right-area{
+            width: 25%;
+        }
+        .area-column{
+            margin: 10px;
+            padding: 10px;
+            min-width: 280px;
+            min-height: 220px;
+            border: 1px solid blue;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="screen-container">
+        <!-- 这里放置大屏的具体内容，例如图表、图片等 -->
+        <div id="screen-content">
+            <div class="left-area area-row">
+                <div class="left-area-top area-column">
+                    LeftAreaTop
+                </div>
+                <div class="left-area-center area-column">
+                    LeftAreaCenter
+                </div>
+                <div class="left-area-bottom area-column">
+                    LeftAreaBottom
+                </div>
+            </div>
+            <div class="center-area area-row">
+                <div class="center-area-top area-column">
+                    CenterAreaTop
+                </div>
+                <div class="center-area-center area-column">
+                    CenterAreaCenter
+                </div>
+                <div class="center-area-bottom area-column">
+                    CenterAreaBottom
+                </div>
+            </div>
+            <div class="right-area area-row">
+                <div class="right-area-top area-column">
+                    RightAreaTop
+                </div>
+                <div class="right-area-center area-column">
+                    RightAreaCenter
+                </div>
+                <div class="right-area-bottom area-column">
+                    RightAreaBottom
+                </div>
+            </div>
+            <!-- <h1>自适应大屏内容</h1> -->
+        </div>
+    </div>
+    <script>
+        // 获取屏幕容器元素
+        const screenContainer = document.getElementById('screen-container');
+
+
+        // * 默认缩放值
+        const scale = {
+            width: '1',
+            height: '1',
+        }
+        // * 设计稿尺寸（px）
+        const baseWidth = 1920
+        const baseHeight = 1080
+        // baseProportion 1.778 比例 ,大于>1.78 说明更宽, 小于<1.78 说明更高 
+        const baseProportion = parseFloat((baseWidth / baseHeight).toFixed(5))
+        console.log("🚀 ~ baseProportion:", baseProportion) 
+        // 计算缩放比例并更新样式的函数
+        function updateScale() {
+            const appRef = screenContainer
+            if (!appRef) return
+            
+            // 当前窗口的宽高比
+            const currentRate = parseFloat((window.innerWidth / window.innerHeight).toFixed(5))
+            
+            // if (currentRate > baseProportion) {
+            //     // 当前窗口更宽，应该以高度为基准进行缩放
+            //     const scaleSize = (window.innerHeight / baseHeight).toFixed(5)
+            //     appRef.style.transform = `scale(${scaleSize})`
+            // } else {
+            //     // 当前窗口更高，应该以宽度为基准进行缩放
+            //     const scaleSize = (window.innerWidth / baseWidth).toFixed(5)
+            //     appRef.style.transform = `scale(${scaleSize})`
+            // }
+            if (appRef) {
+                if (currentRate > baseProportion) {
+                    // 表示更宽
+                    scale.width = ((window.innerHeight * baseProportion) / baseWidth).toFixed(5)
+                    scale.height = (window.innerHeight / baseHeight).toFixed(5)
+                    appRef.style.transform = `scale(${scale.width}, ${scale.height})`
+                } else {
+                    // 表示更高
+                    scale.height = ((window.innerWidth / baseProportion) / baseHeight).toFixed(5)
+                    scale.width = (window.innerWidth / baseWidth).toFixed(5)
+                    appRef.style.transform = `scale(${scale.width}, ${scale.height})`
+                }
+            }
+            // 更新容器元素的缩放样式
+            screenContainer.style.transform = `scale(${scale})`;
+        }
+
+        // 初始化缩放
+        updateScale();
+
+        // 监听窗口大小变化事件，实时更新缩放比例
+        window.addEventListener('resize', updateScale);
+    </script>
+</body>
+
+</html>

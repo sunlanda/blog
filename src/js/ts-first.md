@@ -76,8 +76,9 @@ const myBro :MyFriend = {
   name: '韩梅梅'
 }
 ```
-// 此时定义myBro就会报错,因为name传递了`string`字符串,不可能实现同一个类型满足`number`和`string`的,所以myBro.name是一个`never`类型
-![](/public/ts-first-01.jpg)
+
+此时定义myBro就会报错,因为name传递了`string`字符串,不可能实现同一个类型满足`number`和`string`的,所以myBro.name是一个`never`类型
+![](/ts-first-01.jpg)
 
 
 ### enum 枚举

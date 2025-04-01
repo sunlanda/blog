@@ -6,7 +6,7 @@ export default defineConfig({
   srcDir: './src',
   outDir: './docs',
   // base: '/',
-  base: '/',
+  base: '/blog',
   description: "一个前端基础知识补充",
   // lastUpdated:true,
   themeConfig: {
