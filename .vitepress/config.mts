@@ -59,7 +59,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: '如何进行多git源ssh配置', link: '/project/git-gitlab-github-sshkey' },
-          { text: '如何写一个函数库并发布npm', link: '/project/npmpublish' },
+          // { text: '如何写一个函数库并发布npm', link: '/project/npmpublish' },
           // { text: '开发第一款自己的脚手架cli', link: '/project/first-cli' },
           // { text: 'webpack自定义plugin', link: '/project/webpack-plugin' },
           // { text: 'rollup快速打包组件', link: '/project/rollup-tutotal' },
@@ -84,6 +84,7 @@ export default defineConfig({
           { text: '如何通过github actions部署vitepress 静态网站？', link: '/project/how-to-deploy-static-page-for-github-action' },
           { text: 'node.js操作京东云云存储的文件上传下载实践', link: '/project/nodejs-s3-oss' },
           { text: '服务器运维工具ansible的部署实践', link: '/project/rhel-ansible' },
+          // { text: '京东云国际化实践', link: '/project/portal-i18n' },
           // { text: 'Vue & Nuxt.js对京东云官网的SSR实践', link: '/performance/nuxt-ssr' },
           // { text: 'chrome插件编写', link: '/project/chrome-extension' },
           // { text: 'vscode插件编写', link: '/project/vscode-extension' },
@@ -111,7 +112,7 @@ export default defineConfig({
         items: [
           { text: '页面性能时间', link: '/performance/how-to-get-performance-target' },
           { text: '浏览器执行顺序', link: '/algorithm/execute-sequence' },
-          // { text: '如何进行性能优化', link: '/performance/optimization' },
+          { text: '如何进行性能优化', link: '/performance/optimization' },
         ]
       },
       // {
