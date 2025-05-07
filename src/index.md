@@ -4,12 +4,14 @@ layout: home
 
 hero:
   name: "sunlanda blog"
-  text: "一个前端小书站点"
-  tagline: '帮助到XXXX位前端开发者'
+  # text: "一个前端小书站点"
+  # tagline: '帮助到XXXX位前端开发者'
+  text: "一个前端工程师的博客"
+  tagline: '前端攒经验中'
   actions:
     - theme: brand
       text: 开始学习
-      link: /js/chapter1
+      link: /js/javascript-type
     - theme: alt
       text: 关于
       link: /about/resume

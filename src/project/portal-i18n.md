@@ -30,14 +30,16 @@
 * 放到indexedDB中 -> SRM 
 * 放到jnpm中 京东云
 * key 英文 $.t("product.header.maintitle")
-配图 ![](jnpm-iopt-fe-base)
+配图 ![npm包管理内容](/jnpm-iopt-fe-base.png)
 
 ## UA识别 
 通过用户IP/浏览器使用语言/系统语言
 权重判断后 对语言进行默认加载 不做设置 只做识别后加载对应语言文件
 
 ## 两种方案
-cn/en https://joyspace.jd.com/meeting/yRg3tCcWq9xr7gdA82Gm
+cn/en
+![i18n方案1](/i18n-case1.png)
+![i18n方案2](/i18n-case2.png)
 
 ## 测试方式
 1. 通过顶栏切换语言 有写入cookie动作
