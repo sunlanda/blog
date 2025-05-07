@@ -59,6 +59,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: '如何进行多git源ssh配置', link: '/project/git-gitlab-github-sshkey' },
+          { text: '前端开发快速入门Docker', link: '/project/docker' },
           // { text: '如何写一个函数库并发布npm', link: '/project/npmpublish' },
           // { text: '开发第一款自己的脚手架cli', link: '/project/first-cli' },
           // { text: 'webpack自定义plugin', link: '/project/webpack-plugin' },
