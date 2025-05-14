@@ -102,6 +102,8 @@ export default defineConfig({
           // { text: '微任务宏任务判断执行结果', link: '/algorithm/js-promise' },
           // { text: '算法入门指引', link: '/algorithm/index' },
           { text: '数组排序', link: '/algorithm/sort' },
+          // { text: '递归引发的思考', link: '/algorithm/recurrence' },
+          // { text: '动态规划', link: '/algorithm/dp' },
           // { text: '树结构', link: '/algorithm/sort' },
           // { text: '图', link: '/algorithm/sort' },
           // { text: '链表', link: '/algorithm/sort' },
