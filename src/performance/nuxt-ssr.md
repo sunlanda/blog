@@ -4,6 +4,9 @@
 
 
 # next.js nuxt.js 服务端渲染的逻辑
+resourceHints
+preload
+refetch
 
 ## spa
 * 初始加载慢 请求数据量大
@@ -22,3 +25,9 @@
 * 可以借助服务端缓存和render 机制,提前渲染好html 进行返回
 
 现有项目改造,可以走目录类型 app/src/pages/_index [detail]等组装方式
+
+## 使用nuxt.js的缺点
+首屏加载的js较多
+* 同样需要拆包
+* 需要做prefetch 配置
+
