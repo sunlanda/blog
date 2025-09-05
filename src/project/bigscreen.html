@@ -130,16 +130,6 @@
             
             // 当前窗口的宽高比
             const currentRate = parseFloat((window.innerWidth / window.innerHeight).toFixed(5))
-            
-            // if (currentRate > baseProportion) {
-            //     // 当前窗口更宽，应该以高度为基准进行缩放
-            //     const scaleSize = (window.innerHeight / baseHeight).toFixed(5)
-            //     appRef.style.transform = `scale(${scaleSize})`
-            // } else {
-            //     // 当前窗口更高，应该以宽度为基准进行缩放
-            //     const scaleSize = (window.innerWidth / baseWidth).toFixed(5)
-            //     appRef.style.transform = `scale(${scaleSize})`
-            // }
             if (appRef) {
                 if (currentRate > baseProportion) {
                     // 表示更宽

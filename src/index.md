@@ -11,7 +11,8 @@ hero:
   actions:
     - theme: brand
       text: 开始学习
-      link: /js/javascript-type
+      # link: /js/javascript-type
+      link: /js/chapter1
     - theme: alt
       text: 关于
       link: /about/resume

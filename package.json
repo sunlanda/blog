@@ -7,5 +7,15 @@
     "dev": "vitepress dev --open --port=4000",
     "build": "vitepress build",
     "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "@braintree/sanitize-url": "^7.1.1",
+    "@mermaid-js/mermaid-mindmap": "^9.3.0",
+    "cytoscape": "^3.33.1",
+    "cytoscape-cose-bilkent": "^4.1.0",
+    "dayjs": "^1.11.18",
+    "mermaid": "9.3.0",
+    "moment": "^2.30.1",
+    "vitepress-plugin-mermaid": "2.0.10"
   }
 }

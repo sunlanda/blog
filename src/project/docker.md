@@ -75,8 +75,10 @@ CMD ["npm", "start"]
 # 构建镜像
 docker build -t my-react-app .
 
-# 运行容器
+# 运行容器 这里第一个3000指的是容器内部的端口, 第二个3000指的是宿主机的端口, 用户从外网访问的都是宿主机的端口(第二个)
 docker run -d -p 3000:3000 --name my-app-container my-react-app
+# 如果容器内部端口和宿主机端口不一致, 可以使用 -p 宿主机端口:容器内部端口 来指定
+docker run -d -p 3000:80 --name my-app-container my-react-app
 ```
 
 ### 实际案例：前端项目的CI/CD流水线
