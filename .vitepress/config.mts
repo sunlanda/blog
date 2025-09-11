@@ -91,6 +91,7 @@ export default withMermaid(defineConfig({
           { text: '如何通过github actions部署vitepress 静态网站？', link: '/project/how-to-deploy-static-page-for-github-action' },
           { text: 'node.js操作京东云云存储的文件上传下载实践', link: '/project/nodejs-s3-oss' },
           { text: '服务器运维工具ansible的部署实践', link: '/project/rhel-ansible' },
+          { text: '数据大屏兼容适配方案', link: '/css/media-query' },
           // { text: '京东云国际化实践', link: '/project/portal-i18n' },
           // { text: 'Vue & Nuxt.js对京东云官网的SSR实践', link: '/performance/nuxt-ssr' },
           // { text: 'chrome插件编写', link: '/project/chrome-extension' },
