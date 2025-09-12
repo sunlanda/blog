@@ -19,6 +19,7 @@ graph TB
     classDef userDomain fill:#d6eaf8,stroke:#333,stroke-width:1px
 
     subgraph "商品域 (Product Domain)"
+        direction TB
         A1[商品展示] --> A2[商品详情]
         A2 --> A3[商品搜索]
         A3 --> A4[商品分类]
@@ -26,6 +27,7 @@ graph TB
     end
     
     subgraph "购物车域 (Cart Domain)"
+        direction TB
         B1[购物车展示] --> B2[购物车添加]
         B2 --> B3[购物车删除]
         B3 --> B4[购物车修改]
@@ -33,6 +35,7 @@ graph TB
     end
     
     subgraph "订单域 (Order Domain)"
+        direction TB
         C1[订单创建] --> C2[订单展示]
         C2 --> C3[订单支付]
         C3 --> C4[订单取消]
@@ -41,12 +44,12 @@ graph TB
     end
     
     subgraph "用户域 (User Domain)"
+        direction TB
         D1[用户注册] --> D2[用户登录]
         D2 --> D3[用户信息]
         D3 --> D4[用户权限]
         D4 --> D5[用户课程]
     end
-    
     商品域 --> 购物车域
     购物车域 --> 订单域
     用户域 --> 购物车域
@@ -156,7 +159,7 @@ stateDiagram-v2
 ## 技术架构图
 
 ```mermaid
-graph TB
+graph LR
     classDef frontendLayer fill:#f9d5e5,stroke:#333,stroke-width:1px
     classDef backendLayer fill:#d5f5e3,stroke:#333,stroke-width:1px
     classDef dataLayer fill:#d6eaf8,stroke:#333,stroke-width:1px
@@ -164,6 +167,7 @@ graph TB
     classDef thirdPartyLayer fill:#e8daef,stroke:#333,stroke-width:1px
 
     subgraph "前端层 (Frontend Layer)"
+        direction TB
         A1[Next.js] --> A2[React.js]
         A2 --> A3[TypeScript]
         A1 --> A4[Shadcn UI]
@@ -172,6 +176,7 @@ graph TB
     end
     
     subgraph "后端层 (Backend Layer)"
+        direction TB
         B1[Hono.js] --> B2[TypeScript]
         B1 --> B3[API 路由]
         B1 --> B4[中间件]
@@ -179,18 +184,21 @@ graph TB
     end
     
     subgraph "数据层 (Data Layer)"
+        direction TB
         C1[PostgreSQL] --> C2[Prisma ORM]
         C3[MinIO] --> C4[对象存储]
         C5[Redis] --> C6[缓存]
     end
     
     subgraph "基础设施层 (Infrastructure Layer)"
+        direction TB
         D1[Docker] --> D2[Docker Compose]
         D1 --> D3[CI/CD]
         D1 --> D4[容器编排]
     end
     
     subgraph "第三方服务层 (Third-party Services)"
+        direction TB
         E1[Stripe] --> E2[支付处理]
         E3[Plunk] --> E4[邮件服务]
         E5[AWS S3] --> E6[备份存储]
@@ -1414,18 +1422,16 @@ echo "MinIO 控制台: http://localhost:9001"
 
 ## 开发经验总结
 
-在开发这个全栈电商项目的过程中，我遇到了不少挑战，也积累了一些宝贵的经验。作为一名高级工程师，我想分享一些心得，希望对你有所帮助。
+在开发这个全栈电商项目的过程中，我遇到了不少挑战，也积累了一些宝贵的经验。想记录下来做一个沉淀,如果能帮到你,就更好了。
 
 ### 1. 技术选型很重要，但不要过度追求新技术
 
-在这个项目中，我选择了 Next.js、Hono、Prisma 等相对较新的技术栈。这些技术确实提高了开发效率，但也带来了一些挑战，比如文档不够完善、社区支持有限等问题。
-
+在这个项目中，我选择了 Next.js、Hono、Prisma 等相对较新的技术栈。这些技术确实提高了开发效率，但挑战也比较大，文档中文不是很友好,基本机翻加代码demo。
 我的建议是：选择技术栈时，要平衡创新性和稳定性。对于核心业务逻辑，优先考虑成熟稳定的解决方案；对于非关键部分，可以尝试新技术以提升开发体验和性能。
 
 ### 2. 容器化是现代应用开发的必备技能
 
-老实说，如果你还没有使用 Docker 进行开发和部署，那么你真的应该开始了。在这个项目中，Docker 不仅简化了环境搭建，还解决了「在我的机器上能运行」的经典问题。
-
+用过 Docker 进行部署的基本都知道有多爽,不想再回到那个拖包解压。在这个项目中，Docker 不仅简化了环境搭建，还解决了「在我的机器上能运行」的经典问题。
 特别是对于包含多个服务的应用（前端、后端、数据库、对象存储等），Docker Compose 提供了一种优雅的方式来管理这些服务之间的依赖关系。一个简单的 `docker-compose up` 命令就能启动整个应用，这极大地提高了开发和部署效率。
 
 ### 3. 数据建模是系统设计的基础
