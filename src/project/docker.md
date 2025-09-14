@@ -273,6 +273,12 @@ docker network create my-network
 docker network connect my-network container_id
 ```
 
+
+# 清理未使用的镜像、容器和卷
+```sh
+docker system prune -a -f --volumes
+```
+
 ## 最后放一个完成品
 可以利用这个文件直接引用镜像
 修改其中的参数,再执行
