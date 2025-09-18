@@ -121,7 +121,7 @@ export default withMermaid(defineConfig({
         text: '性能优化',
         collapsed: false,
         items: [
-          { text: '页面性能时间', link: '/performance/how-to-get-performance-target' },
+          // { text: '页面性能时间', link: '/performance/how-to-get-performance-target' },
           // { text: '浏览器执行顺序', link: '/algorithm/execute-sequence' },
           { text: '性能优化的一些实践分享', link: '/performance/optimization' },
         ]
