@@ -1,18 +1,21 @@
 # 官网国际化方案 
 
-## 逻辑
-* browser提取前三个lang
+## 核心实现逻辑
+* 浏览器navigator.languages提取数组前三个lang
 * 映射语言(cn/us)
-* 跳转并显示(translate lang/no support tips)
+* 跳转并显示(翻译过的文字lang)
+* 如果没有对应语言默认跳转 en 然后提示no support tips
 
 
 
-## i18n方案操作
+## 页面实现效果
+### 默认访问指定url
+通过/cn /en等路由访问即可跳转对应语言内容
 
-## event 切换 中英文
-* 无刷效果
-* 有刷新效果 url改变(current)
-* 
+### 通过按钮点击/下拉切换 中英文
+* 无刷新效果 (直接改变i18n中locale)
+* 有刷新效果 url改变(current地址需要跳转)
+
 ![click-change](/jdcloud-check-lang.png)
 
 

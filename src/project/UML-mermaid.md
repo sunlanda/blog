@@ -1,7 +1,7 @@
 # 如何使用代码绘制UML架构图
 
 
-```mermaid-example
+```mermaid
     gitGraph
        commit id: "Normal"
        commit
